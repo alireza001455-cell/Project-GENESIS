@@ -25,4 +25,17 @@ No background monitor, workflow, webhook, or event subscription was created in t
 - https://learn.chatgpt.com/docs/whats-new
 
 ## Verification record
-Pending initial publication and independent retrieval. See subsequent entries for actual results; do not infer success from this plan.
+- Initial documentation committed and pushed to main: `df896a9c8faffaf9245178d8701405f88da90ed7` (16 files). Local HEAD and remote main matched.
+- GitHub connector retrieved the complete recursive tree at that commit and CURRENT_STATUS.md by immutable commit URL. All 16 file paths are remotely visible.
+- A fresh temporary Git clone reproduced the exact tree and commit. All file object hashes match the local commit; both checkouts were clean. This verifies documentation recovery, not an engine build.
+- Candidate-file and committed-content secret-pattern scans found no matches. Manually reviewed the complete documentation/configuration candidate set; no credentials or generated outputs were found. This is a bounded check, not a guarantee against all future secrets.
+- Ignore probes excluded .env, .env.local, credentials.json, private.pem, Game/Library, Game/.godot, and Builds samples. Game/Assets/test.meta and CURRENT_STATUS.md remained eligible. README local links all resolve; staged whitespace check passed.
+- Git normalizes Markdown to LF through .gitattributes. The supplied protocol's wording is unchanged; the original local copy's byte hash matched the attachment before Git line-ending normalization.
+- ChatGPT retrieval test dispatched to Project Foundation Setup for CURRENT_STATUS.md, DECISIONS.md, and this record at df896a9. The message tool accepted delivery. The chat reader later confirmed the test turn completed, but its assistant response was exposed only as an unresolved content reference, without readable response or tool evidence. No actual ChatGPT GitHub retrieval result could be inspected. Independent ChatGPT-side retrieval remains unverified; connector retrieval in this Codex chat is verified.
+- GitHub Actions permission/workflow-list API probes were rejected by the connector's public-fetch endpoint allowlist. No conclusion about repository Actions settings follows. No .github/workflows files exist, so no repository workflows are configured. GitHub Actions platform capability is documented, but execution and repository enablement are not verified.
+- Codex automation capability is exposed by the local app tool; no job was created or run. Work event-trigger API is not exposed here; eligible web/mobile setup and account permission remain user-side steps.
+
+## User-side follow-up
+- In Project Foundation Setup, confirm the retrieval request ran; if it did not, ask it to retrieve the three named files using its GitHub connection at main and report the commit. If access is missing, authorize the repository in ChatGPT's GitHub app settings. This cannot be replaced by Codex successfully fetching the same files.
+- If adopting the recommended Actions check, approve/configure that separate lightweight workflow and verify a harmless successful and intentionally failing validation before calling alerts operational. Choose failure-only notifications in GitHub settings.
+- Optional later: configure a Work PR event task on eligible web/mobile, or one Codex scheduled review. Avoid duplicate monitors. Local scheduled work requires the computer on and desktop app running.

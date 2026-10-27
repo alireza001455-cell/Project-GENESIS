@@ -15,7 +15,8 @@ Phase 0 — development environment. No gameplay or engine project exists. Hardw
 
 ## Communication and automation
 - Protocol message delivered to Project Foundation Setup; prior message delivery alone does not prove adoption or file retrieval.
-- Initial documentation commit/push, remote comparison, and independent ChatGPT retrieval are being verified. Consult COMMUNICATION_VERIFICATION.md for executed results.
+- Initial documentation published at df896a9c8faffaf9245178d8701405f88da90ed7. GitHub connector retrieval and a clean-clone comparison verified all 16 files. This subsequent evidence update records the results.
+- Independent ChatGPT retrieval request delivered, but no inspectable retrieval response returned through the chat reader; ChatGPT-side GitHub access remains unverified. Consult COMMUNICATION_VERIFICATION.md for exact evidence and user-side follow-up.
 - No workflow or monitoring automation is enabled. Recommended first monitor: one small GitHub Actions documentation check plus failure-only GitHub notifications.
 - Codex scheduled jobs/heartbeats are exposed. Work GitHub PR triggers are documented on eligible web/mobile plans, not desktop; account eligibility remains unverified.
 
