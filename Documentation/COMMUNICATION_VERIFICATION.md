@@ -36,6 +36,20 @@ No background monitor, workflow, webhook, or event subscription was created in t
 - Codex automation capability is exposed by the local app tool; no job was created or run. Work event-trigger API is not exposed here; eligible web/mobile setup and account permission remain user-side steps.
 
 ## User-side follow-up
-- In Project Foundation Setup, confirm the retrieval request ran; if it did not, ask it to retrieve the three named files using its GitHub connection at main and report the commit. If access is missing, authorize the repository in ChatGPT's GitHub app settings. This cannot be replaced by Codex successfully fetching the same files.
+- Initial retrieval is now user-confirmed as recorded below. Retrieve the new round-trip marker independently before marking the final test complete.
 - If adopting the recommended Actions check, approve/configure that separate lightweight workflow and verify a harmless successful and intentionally failing validation before calling alerts operational. Choose failure-only notifications in GitHub settings.
 - Optional later: configure a Work PR event task on eligible web/mobile, or one Codex scheduled review. Avoid duplicate monitors. Local scheduled work requires the computer on and desktop app running.
+
+## User-reported ChatGPT retrieval confirmation — 2026-10-27
+- Evidence source: the user reports that the Project Genesis ChatGPT Project successfully retrieved and read all four foundational files, plus DECISIONS.md and COMMUNICATION_VERIFICATION.md, from GitHub.
+- Attribution: user-reported confirmation, not direct observation of ChatGPT connector calls by Codex. The four foundational filenames and retrieved revision were not specified in this confirmation; do not infer them.
+- This updates the earlier unverified initial-retrieval status. Git transport and Codex connector retrieval are directly verified; initial ChatGPT retrieval is confirmed by the user.
+
+## Final documentation round-trip test — 2026-10-27
+- Test ID: `GENESIS-COMMS-ROUNDTRIP-20261027-01`
+- Verification marker: `A small organism begins a shared journey among the stars.`
+- Test file: `Documentation/COMMUNICATION_VERIFICATION.md`.
+- Scope: harmless documentation-only addition. No gameplay, monitoring, workflow, or event subscription changes.
+- Status: pending independent ChatGPT retrieval of this new marker. Publication is verified separately by the reported commit and remote readback. A successful push or Codex connector read alone does not complete this round trip.
+- Completion evidence required: ChatGPT retrieves this file through its GitHub connection at the published test commit and returns the Test ID, exact marker, and retrieved revision; the user then confirms the result to Codex.
+- After confirmation: record the result here, update CURRENT_STATUS.md and the communication backlog task, and resume Phase 0 with hardware/experience/platform assessment and engine selection. Gameplay remains gated on environment verification.
