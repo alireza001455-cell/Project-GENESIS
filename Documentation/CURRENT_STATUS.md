@@ -16,7 +16,7 @@ Phase 0 — development environment. No gameplay or engine project exists. Hardw
 ## Communication and automation
 - Protocol message delivered to Project Foundation Setup; prior message delivery alone does not prove adoption or file retrieval.
 - Initial documentation published at df896a9c8faffaf9245178d8701405f88da90ed7. GitHub connector retrieval and a clean-clone comparison verified all 16 files. This subsequent evidence update records the results.
-- Independent ChatGPT retrieval request delivered, but no inspectable retrieval response returned through the chat reader; ChatGPT-side GitHub access remains unverified. Consult COMMUNICATION_VERIFICATION.md for exact evidence and user-side follow-up.
+- Manual GitHub-based ChatGPT ↔ Codex documentation workflow VERIFIED: user reports independent ChatGPT retrieval at 33d20fa5c39c37209ac613156a47edce133cc7e8 with matching test ID and exact marker. ChatGPT-side evidence is explicitly user-reported; Codex publication/readback was directly verified. P0-03 is Verified Complete. See COMMUNICATION_VERIFICATION.md.
 - No workflow or monitoring automation is enabled. Recommended first monitor: one small GitHub Actions documentation check plus failure-only GitHub notifications.
 - Codex scheduled jobs/heartbeats are exposed. Work GitHub PR triggers are documented on eligible web/mobile plans, not desktop; account eligibility remains unverified.
 
@@ -26,4 +26,4 @@ Phase 0 — development environment. No gameplay or engine project exists. Hardw
 - No automatic live propagation into existing chats or project instructions has been verified.
 
 ## Session handoff
-Work: documentation audit, repository connection, privacy-conscious identity, ignore checks, automation capability research. Changed: root configuration/instructions, README, and Documentation records. No known gameplay bugs or deliberate implementation debt. Next: finish repository retrieval evidence, then developer/hardware assessment. No destructive operations, releases, history rewrites, or gameplay changes authorized.
+Work: documentation audit, repository connection, privacy-conscious identity, ignore checks, automation capability research. Changed: root configuration/instructions, README, and Documentation records. No known gameplay bugs or deliberate implementation debt. Next: resume P0-01 developer/hardware/platform assessment, then P0-02 engine selection. No destructive operations, releases, history rewrites, or gameplay changes authorized.
