@@ -1,0 +1,52 @@
+# Credentials and machine-local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+.aws/
+.ssh/
+.codex/
+.agents/
+credentials.json
+secrets.json
+*service-account*.json
+
+# OS and IDE caches
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vs/
+.idea/
+*.user
+*.suo
+*.tmp
+*.log
+
+# Build, test, dependency and tool output
+/Builds/
+/build/
+/dist/
+/TestResults/
+**/bin/
+**/obj/
+**/node_modules/
+**/__pycache__/
+.venv/
+
+# Reserved engine project caches; engine selection is pending
+/Game/[Ll]ibrary/
+/Game/[Tt]emp/
+/Game/[Oo]bj/
+/Game/[Ll]ogs/
+/Game/[Uu]ser[Ss]ettings/
+/Game/[Bb]uild/
+/Game/[Bb]uilds/
+/Game/.godot/
+
+# Track source assets, .meta files, scenes, packages and project settings.
+# Configure selective LFS only when large binary source assets are introduced.
