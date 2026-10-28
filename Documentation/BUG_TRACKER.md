@@ -16,3 +16,10 @@ Final-template player rendered but reported unsupported/stripped Gaussian/Bokeh 
 
 ## Recovery follow-up — 2026-10-28
 ADOPTION-001 remains resolved in published source. Fresh-clone recovery and VS 2026 attach/breakpoint verified; no new blocking defects found. UnityConnect.m_Enabled again auto-changed 0→1 during clean import; restored committed 0 after engine closure. Recheck on future runs; no paid feature invoked. See PHASE0_RECOVERY_VERIFICATION.md. Nonfatal D3D12 info-queue diagnostic and TD-P0-001 remain documented limitations.
+
+## Final Phase 0 disposition — 2026-10-28
+No blocking setup defects remain. SETUP-001 hardware access limitation was overcome by the later verified hardware inventory; ADOPTION-001 and URP-001 fixes passed published clean-checkout recovery. Phase 0 Verified Complete.
+
+- D3D12 diagnostic 0x80004002: nonblocking on observed hardware; revisit if rendering/startup fails.
+- UnityConnect.m_Enabled import auto-toggle: nonblocking known behavior; source disabled value restored with engine closed. Recheck after future editor/import runs; no automatic-service verification claimed.
+- TD-P0-001: accepted low-priority resource-size tradeoff; review before release/performance milestone per BACKLOG.md.

@@ -1,6 +1,6 @@
 # Phase 0 — development environment
 
-Updated: 2026-10-28. Status: in progress; gameplay prohibited until the gate passes.
+Updated: 2026-10-28. Status: Phase 0 Verified Complete. Phase 1/gameplay remains authorization-gated. Earlier dated audit sections preserve historical states; the final sign-off below supersedes their pending items.
 
 ## Initial inspection inventory (historical; see CURRENT_STATUS.md for latest)
 - Working root: `C:/Users/alire/Documents/ChatGPT/Project GENESIS (codex)`.
@@ -24,7 +24,7 @@ Updated: 2026-10-28. Status: in progress; gameplay prohibited until the gate pas
 8. **Gate review:** update verified status and resolve blocking setup issues. Only then plan the Cell Stage MVP and request direction to begin gameplay.
 
 ## Phase 0 acceptance evidence
-Approved editor version recorded; documentation push/clean-clone recovery previously verified. Pending: reviewed source adoption, successful editor and debugger checks, test runner result, standalone build/run, clean-clone engine build/run, and reproducible Unity setup instructions.
+All required Phase 0 checks passed. Reviewed adoption, pinned editor/tooling, scene/input/rendering, compilation, VS attachment/breakpoint, 2/2 EditMode tests, standalone Mono build/run/shutdown and clean-checkout recovery are recorded in PHASE0_RECOVERY_VERIFICATION.md and PHASE0_VERIFICATION.md. Developer assessment and final milestone sign-off are recorded below.
 
 Do not mark checklist items complete from installation alone. Record actual observed results.
 
@@ -46,3 +46,10 @@ Minimal editor-only tooling is at Game/Assets/Editor/GenesisEnvironment.cs: open
 
 ## Recovery procedure executed — 2026-10-28
 Published revision a430eaa recovered in a new temporary clone without Game/Library: licensing/package import/compilation succeeded, 2/2 tests passed, Windows x64 Mono development build 0 errors/warnings, and standalone render/normal shutdown observed. VS 2026 normal launch/attachment/breakpoint verified on canonical project. Use PHASE0_RECOVERY_VERIFICATION.md for results and local evidence paths. Machine-wide package cache reuse is normal and was not disabled. UnityConnect auto-enabled in the fresh import; restored only its disabled source value after closing engine; recovered tree then clean, lockfile unchanged. Original source remains unchanged. No native IL2CPP toolchain needed for this Mono milestone.
+
+## Confirmed developer assessment and final sign-off — 2026-10-28
+User-confirmed facts: programming experience complete beginner; game-development experience complete beginner; availability 5–8 hours/week; preferred sessions 90 minutes; software budget $0; Codex performs most coding while ChatGPT provides planning, architectural guidance and explanations; initial target Windows PC. Hardware and canonical folder are already recorded in the installation audit.
+
+Phase 0 is Verified Complete under the user's final sign-off directive. The approved baseline is Unity 6000.6.7f1/C#/URP 17.6.0/Input System 1.20.1, Windows x64 Mono, VS Community 2026 18.11.2, Git 2.53.0.windows.3 and Git LFS 3.7.1. No large assets currently require LFS tracking rules. Native IL2CPP/C++ verification is outside this baseline.
+
+Recovery evidence applies to a430eaa05a7948107ae200d4b0918aa08b233da7, Game subtree b1d3f16c88feb8130a5f1c7a34659a091f7ba10c, unchanged at bf075b82cbc64acaf2de9b614893ee3d64c1eecf and by this documentation-only sign-off. No engine tests were rerun for this documentation change. See PHASE0_RECOVERY_VERIFICATION.md for actual results, limitations and accepted nonblocking follow-ups. Phase 1 still requires explicit approval.

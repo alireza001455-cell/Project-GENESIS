@@ -1,6 +1,6 @@
 # Phase 0 GitHub publication and recovery verification
 
-Date: 2026-10-28. Phase 0 remains open pending all required checks. No gameplay or game-build publication.
+Date: 2026-10-28. Phase 0 Verified Complete following final acceptance review and user-confirmed assessment. No gameplay or game-build publication.
 
 ## Publication evidence
 - Pre-publication branch main, correct origin, remote HEAD/main `38547f6321315124280a087fed5d1063e23db79f`; existing work preserved.
@@ -18,7 +18,7 @@ Date: 2026-10-28. Phase 0 remains open pending all required checks. No gameplay 
 - Local temporary clone path is saved in canonical ignored TestResults/UnityAdoption/recovery-path.txt. Original external source remains preserved.
 
 ## Results
-Technical clean-checkout recovery and debugger verification PASSED. This does not close Phase 0 or authorize gameplay; developer assessment and final milestone sign-off remain outstanding.
+Technical clean-checkout recovery and debugger verification PASSED. The subsequent assessment and final sign-off below close Phase 0; gameplay remains separately authorization-gated.
 
 | Check | Observed result |
 |---|---|
@@ -37,7 +37,7 @@ The recovered build is functionally reproducible; byte-for-byte build determinis
 
 Local evidence: temporary clone's ignored TestResults/UnityAdoption/Recovery-Tests.log, Recovery-EditMode.xml, Recovery-Build.log, build-summary.txt and Recovery-Player.log; canonical ignored DebuggerEditor.log and Computer Use observations. Raw logs/builds were not committed or distributed. Temporary recovery checkout retained for inspection; no source cleanup/deletion performed.
 
-## Remaining Phase 0 work
+## Historical remaining work before final sign-off (superseded below)
 - Developer programming/game-engine experience, weekly availability, session preference and budget still need user input. Hardware and Windows target are already verified; do not ask for them again unnecessarily.
 - Review final Phase 0 acceptance/sign-off after assessment. IL2CPP is outside the approved Mono verification baseline and remains unverified, not a reason to install an unnecessary C++ toolchain now.
 - Low-risk TD-P0-001 (postprocess resource size tradeoff) remains scheduled for pre-release/performance review. No blocking technical recovery/debugger defect remains from this task.
@@ -46,5 +46,19 @@ Local evidence: temporary clone's ignored TestResults/UnityAdoption/Recovery-Tes
 ## Scope boundaries
 Standing Git authorization permits publishing verified in-scope source and records, including final recovery results, after the required fresh pre-push checks. It does not authorize paid services, game-build publishing, significant destructive changes, major architecture/scope changes, or gameplay. Phase 1 still requires explicit approval. Automatic monitoring/synchronization remains inactive.
 
-## Recovery progress — observed evidence
+## Historical recovery progress — superseded by final results above
 Fresh clone tests completed with process exit 0: 2 passed, 0 failed, at published revision a430eaa05a7948107ae200d4b0918aa08b233da7. Initial cold script compilation took 331.77 seconds; packages/assets imported without copying an old Library. Build verification is running next. Canonical VS retry now has normal application access, loaded/built its Unity solution, and attached to the editor; Unity's current-session debugging option was selected, causing a debug-mode recompile/domain reload. Breakpoint proof and final build/player results remain pending until observed.
+
+## Final acceptance and milestone sign-off — 2026-10-28
+Phase 0: Verified Complete. Final review matched the master requirement, “A reproducible project that launches successfully and can be built from a clean checkout,” and AGENTS.md's environment checks against the observed results above.
+
+- Assessment, approved engine/platform, installed toolchain, canonical repository and source preservation: complete; confirmed assessment in SOFTWARE_SETUP.md.
+- Pinned-editor launch, compilation, sample scene Play/stop, URP/Input configuration and test runner: passed.
+- IDE attachment and source breakpoint: passed.
+- Windows x64 Mono build, launch/render and normal shutdown: passed locally and from a fresh checkout; 2/2 recovery tests, build 0 errors/0 warnings.
+- Source publication and remote retrieval: verified; bf075b82cbc64acaf2de9b614893ee3d64c1eecf published the final technical evidence. User reports independent ChatGPT retrieval of that revision.
+- Blocking setup defects: none outstanding. D3D12 diagnostic, UnityConnect import auto-toggle and low-priority TD-P0-001 explicitly accepted as nonblocking; retain follow-ups in BUG_TRACKER.md/BACKLOG.md.
+
+This is a documentation-only acceptance review of existing evidence, not a new engine test run. Game subtree b1d3f16c88feb8130a5f1c7a34659a091f7ba10c remains unchanged. Recovery reused the installed host toolchain/global package cache; IL2CPP, isolated-machine recovery, bitwise determinism and gameplay performance remain outside approved acceptance scope.
+
+The user's final sign-off directive authorizes closure when these checks are satisfied. Phase 1 remains gated by explicit user approval; CELL_STAGE_MVP_PROPOSAL.md stays review-only. Automatic synchronization/monitoring remains inactive.

@@ -1,6 +1,6 @@
 # First Cell Stage playable — proposal for review
 
-Status: proposed planning only. No gameplay implementation authorized. Complete Phase 0 assessment/sign-off and obtain explicit Phase 1 approval first. This draft follows the master directive's first-playable scope; it is not the complete Cell Stage.
+Status: proposed planning only. No gameplay implementation authorized. Phase 0 is Verified Complete as of 2026-10-28; obtain explicit Phase 1 approval before implementation. This draft follows the master directive's first-playable scope; it is not the complete Cell Stage.
 
 ## Player loop
 Control one placeholder cell in a small top-down microscopic arena, collect food, manage energy spent moving, avoid one simple hazard, and read a minimal status display. A restart makes the loop repeatable. Use original placeholder visuals and existing URP/Input System; no new paid assets or services.
@@ -12,7 +12,7 @@ Control one placeholder cell in a small top-down microscopic arena, collect food
 4. Add one hazard/damage or energy-loss rule, minimal HUD and restart; playtest readability/responsiveness.
 5. Build/run Windows x64 Mono locally, rerun environment/regression tests, measure basic frame-time/memory behavior, and publish only source under standing Git authorization. Game-build distribution needs separate approval.
 
-Each step gets concrete acceptance criteria and a small reviewable commit before the next dependent step. Estimate sessions after learning the user's experience and availability; no delivery date promised.
+Each step gets concrete acceptance criteria and a small reviewable commit before the next dependent step. Plan approved work for a complete beginner with 5–8 hours/week and 90-minute sessions; no delivery date promised.
 
 ## Acceptance questions to settle before coding
 - Movement controls and camera framing; keyboard/mouse baseline already approved, gamepad optional later.

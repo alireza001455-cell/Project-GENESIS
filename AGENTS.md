@@ -3,7 +3,7 @@
 ## Scope and current gate
 - Build Game 1: an original five-stage game (Cell, Creature, Tribal, Civilization, Space). Complete Game 1 before full Game 2 production.
 - Game 2 may reuse proven foundations; do not implement speculative simulation, genetics, or machine learning systems for it now.
-- Current milestone: Phase 0, development environment. Do not implement gameplay until the environment is configured and verified and the user authorizes the next milestone.
+- Current milestone: Phase 0 Verified Complete (2026-10-28); Phase 1 awaits explicit user authorization. CELL_STAGE_MVP_PROPOSAL.md remains review-only. Do not implement gameplay before that approval.
 - Source directive: `Documentation/MASTER_DEVELOPMENT_DIRECTIVE.md`. Follow the user's latest instructions where they differ, especially the Phase 0 gameplay gate.
 - Approved engine: Unity 6.6 `6000.6.7f1` with C#, URP `17.6.0`, Input System `1.20.1`, Windows x64. Game/ contains the adopted source; original `C:/Users/alire/Project GENESIS` is preserved. User approved omitting Assistant, Sentis, Pipeline and Unity Version Control only in Game/, resolving ADOPTION-001, and verifying/publishing the Phase 0 source. No duplicate project, gameplay, or paid-service activation. Routine source commit/push authority follows the policy below; publishing game builds remains separately gated.
 

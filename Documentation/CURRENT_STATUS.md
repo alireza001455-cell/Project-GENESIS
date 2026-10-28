@@ -3,7 +3,7 @@
 Date: 2026-10-28
 
 ## Current milestone
-Phase 0 — development environment, locally built and smoke-tested. Approved Unity 6000.6.7f1/C#/URP 17.6.0/Input System 1.20.1/Windows x64 source is adopted under Game/. ADOPTION-001 fixed; 2 smoke tests, sample Play Mode and local Mono development build/run/shutdown verified. Original external source preserved. VS breakpoint/attachment and remote clean-clone engine recovery are now verified. Phase 0 still awaits remaining developer assessment and milestone sign-off. Routine source commit/push is now authorized and underway. No gameplay, game-build publication or paid-service activation. PHASE0_VERIFICATION.md is the latest evidence record; earlier audit entries are historical.
+Phase 0 — Verified Complete (2026-10-28). Developer assessment is confirmed; all required foundation checks passed, including clean-checkout Unity recovery and VS attachment/breakpoint. Final acceptance evidence: PHASE0_RECOVERY_VERIFICATION.md; assessment: SOFTWARE_SETUP.md. Phase 1 awaits explicit user approval; CELL_STAGE_MVP_PROPOSAL.md is review-only. Earlier dated entries below are historical and superseded by the final sign-off.
 
 ## Verified foundation
 - Reviewed all 11 original documentation files and organized root instructions/configuration plus Documentation/.
@@ -58,3 +58,12 @@ Technical environment recovery PASSED at published revision a430eaa05a7948107ae2
 VS 2026 retry succeeded through normal app access: solution build, Attach to Unity, current-session debugging, breakpoint hit at GenesisEnvironment.OpenSampleScene line 19 with call stack, resume and debug-session end verified. Temporary breakpoint removed; canonical editor closed normally. Earlier debugger access limitation is resolved. Details/commands/evidence: PHASE0_RECOVERY_VERIFICATION.md.
 
 Phase 0 remains OPEN for developer assessment (experience, availability/session preference, budget) and milestone sign-off. No gameplay authorized. CELL_STAGE_MVP_PROPOSAL.md is a review-only planning draft. Standing source commit/push authority is active; no game builds published or monitoring enabled. Remaining low-risk items: TD-P0-001 size tradeoff, non-fatal D3D12 debug-info diagnostic, and recheck of Unity's automatic UnityConnect flag behavior on future runs.
+
+## Final Phase 0 milestone sign-off — 2026-10-28
+User supplied the remaining developer assessment and requested closure if the recorded criteria passed. Reviewed AGENTS.md, the master Phase 0 completion requirement, ROADMAP.md and setup/recovery evidence: all required checks are satisfied for the approved Windows x64 Mono baseline. P0-01 through P0-04 are Verified Complete. No required Phase 0 checks remain outstanding.
+
+Clean-checkout recovery built and launched successfully at a430eaa; the unchanged Game subtree is b1d3f16c88feb8130a5f1c7a34659a091f7ba10c. Technical results and debugger proof were published in bf075b82cbc64acaf2de9b614893ee3d64c1eecf. The user reports ChatGPT independently retrieved that revision; this is user-reported confirmation, not a direct observation by Codex.
+
+Accepted nonblocking follow-ups: D3D12 info-queue diagnostic 0x80004002 despite successful rendering/shutdown; UnityConnect service flag auto-toggle on import (committed disabled value restored with engine closed; recheck future runs); TD-P0-001 postprocessing resource size tradeoff, review before release/performance milestone.
+
+Next safe action: user review of CELL_STAGE_MVP_PROPOSAL.md and explicit Phase 1 authorization. Standing Git permission remains in force for approved work. Manual GitHub communication is verified; automatic synchronization/monitoring remains inactive. This session changes documentation only.

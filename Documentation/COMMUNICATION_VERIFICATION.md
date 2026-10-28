@@ -65,3 +65,6 @@ No background monitor, workflow, webhook, or event subscription was created in t
 - Verified scope: manual documentation publication through GitHub followed by independent ChatGPT retrieval and user relay of the result to Codex. Future sessions must still retrieve current repository state.
 - Automatic synchronization, background monitoring, event triggers, and live chat propagation are not operational or verified. None were enabled.
 - P0-03 is Verified Complete. Resume Phase 0 assessment (P0-01), then engine selection (P0-02); engine installation/build/recovery verification remains pending. No gameplay implementation.
+
+## Published technical evidence retrieval — user-reported confirmation, 2026-10-28
+User reports that ChatGPT independently retrieved published GitHub records and verified main at bf075b82cbc64acaf2de9b614893ee3d64c1eecf. Codex records this as user-reported confirmation, not a direct observation of ChatGPT's integration. Manual GitHub communication remains verified. Phase 0 is now Verified Complete; Phase 1 needs explicit approval. Automatic synchronization and monitoring remain inactive.
