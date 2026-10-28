@@ -5,7 +5,13 @@
 - Game 2 may reuse proven foundations; do not implement speculative simulation, genetics, or machine learning systems for it now.
 - Current milestone: Phase 0, development environment. Do not implement gameplay until the environment is configured and verified and the user authorizes the next milestone.
 - Source directive: `Documentation/MASTER_DEVELOPMENT_DIRECTIVE.md`. Follow the user's latest instructions where they differ, especially the Phase 0 gameplay gate.
-- Engine selection is pending. Unity 6/C# is provisional, not an approved dependency.
+- Approved engine: Unity 6.6 `6000.6.7f1` with C#, URP `17.6.0`, Input System `1.20.1`, Windows x64. Game/ contains the adopted source; original `C:/Users/alire/Project GENESIS` is preserved. User approved omitting Assistant, Sentis, Pipeline and Unity Version Control only in Game/, resolving ADOPTION-001, and verifying/publishing the Phase 0 source. No duplicate project, gameplay, or paid-service activation. Routine source commit/push authority follows the policy below; publishing game builds remains separately gated.
+
+## Autonomy and Escalation Policy
+- Complete routine Phase 0 work independently: small reversible fixes, environment configuration, non-destructive dependency cleanup within approved scope, error investigation, tests/builds, documentation, and preparing verified changes for review. Apply the smallest safe fix and retest; do not stop for each routine error.
+- Preserve existing work and original source. Avoid unnecessary packages/upgrades and major architecture changes. Record results and uncertainties; group progress into meaningful milestones.
+- Escalate significant deletion, destructive/irreversible actions or history rewrites, paid services, unapproved external data transmission/services, publishing/deployment, major architecture/scope changes, and gameplay before Phase 0 closure and explicit Phase 1 authorization.
+- Standing user authorization (2026-10-28): commit and normally push verified, in-scope work in the current and future approved milestones, including at the end of productive sessions when safe. Before every push verify branch, origin, live remote HEAD and working-tree state; inspect staged files and relevant checks; exclude secrets, caches, builds, logs and temporary files. Preserve work and reconcile unexpected remote commits. Use descriptive, logically grouped commits; push main only when safe and consistent with protections. Never force-push or rewrite history. Report commit hashes and push result. Source publication is distinct from publishing game builds. Clean-checkout engine recovery and remaining acceptance checks must pass before Phase 0 closure; Phase 1 needs explicit approval.
 
 ## Working standards
 - Apply `Documentation/COMMUNICATION_PROTOCOL.md` to every chat working in this repository. Official shared repository: https://github.com/alireza001455-cell/Project-GENESIS.
