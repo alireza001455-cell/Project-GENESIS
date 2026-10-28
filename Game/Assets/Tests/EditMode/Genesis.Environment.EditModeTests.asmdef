@@ -1,0 +1,6 @@
+{
+  "name": "Genesis.Environment.EditModeTests",
+  "references": [],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"]
+}

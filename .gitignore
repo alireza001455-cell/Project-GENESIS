@@ -38,7 +38,13 @@ Desktop.ini
 **/__pycache__/
 .venv/
 
-# Reserved engine project caches; engine selection is pending
+# Unity project caches and generated IDE files
+/Game/*.csproj
+/Game/*.sln
+/Game/*.slnx
+/Game/*.pidb
+/Game/*.unityproj
+/Game/.vsconfig
 /Game/[Ll]ibrary/
 /Game/[Tt]emp/
 /Game/[Oo]bj/
