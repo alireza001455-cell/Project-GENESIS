@@ -13,3 +13,6 @@ User's autonomy directive explicitly authorized the repair. Removed only com.uni
 
 ## URP-001 — Template postprocessing stripping diagnostics (resolved locally, 2026-10-28)
 Final-template player rendered but reported unsupported/stripped Gaussian/Bokeh depth-of-field and Panini resources. Kept unused-postprocessing resources in adopted URP global settings, rebuilt and reran: zero such messages, correct rendering and normal shutdown. Final build 0 errors/warnings. Size tradeoff tracked as TD-P0-001. Remaining D3D12 debug-info interface diagnostic has no observed startup/rendering failure; no graphics-driver/Windows changes made.
+
+## Recovery follow-up — 2026-10-28
+ADOPTION-001 remains resolved in published source. Fresh-clone recovery and VS 2026 attach/breakpoint verified; no new blocking defects found. UnityConnect.m_Enabled again auto-changed 0→1 during clean import; restored committed 0 after engine closure. Recheck on future runs; no paid feature invoked. See PHASE0_RECOVERY_VERIFICATION.md. Nonfatal D3D12 info-queue diagnostic and TD-P0-001 remain documented limitations.

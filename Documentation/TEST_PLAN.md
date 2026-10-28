@@ -10,3 +10,6 @@ Executed on 2026-10-27: candidate and committed secret-pattern scans (no matches
 
 ## Local environment smoke tests — 2026-10-28
 Added two Editor-only tests under Game/Assets/Tests/EditMode: effective URP asset/renderer availability and sample scene camera/missing-script integrity. Initial run failed only in restoring an empty batch scene setup; fixed teardown. Final run: 2 passed, 0 failed, exit 0. Manual Play Mode and final Windows x64 Mono development build/run/normal shutdown passed. Postprocess stripping fix verified by rebuilt player log. Actual VS debugger attachment and remote clean-clone engine verification still pending. Commands and evidence: PHASE0_VERIFICATION.md. No gameplay testing claimed.
+
+## Remote recovery and IDE retry — 2026-10-28
+Verified source published via 9e10d8d/a430eaa. Fresh-clone test run: 2 passed/0 failed, process exit 0. Fresh-clone Windows x64 Mono Development build: 0 errors/warnings, exit 0; recovered player rendering and normal shutdown passed. Canonical VS 2026 attachment and editor-only breakpoint/call stack/resume verified. PHASE0_RECOVERY_VERIFICATION.md records exact tested revision, source tree and limitations. No additional implementation changes needed; original source and dependency pins preserved.

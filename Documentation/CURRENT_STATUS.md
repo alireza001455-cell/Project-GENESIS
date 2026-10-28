@@ -3,7 +3,7 @@
 Date: 2026-10-28
 
 ## Current milestone
-Phase 0 — development environment, locally built and smoke-tested. Approved Unity 6000.6.7f1/C#/URP 17.6.0/Input System 1.20.1/Windows x64 source is adopted under Game/. ADOPTION-001 fixed; 2 smoke tests, sample Play Mode and local Mono development build/run/shutdown verified. Original external source preserved. VS debugger attachment and remote clean-clone engine recovery remain pending. Routine source commit/push is now authorized and underway. No gameplay, game-build publication or paid-service activation. PHASE0_VERIFICATION.md is the latest evidence record; earlier audit entries are historical.
+Phase 0 — development environment, locally built and smoke-tested. Approved Unity 6000.6.7f1/C#/URP 17.6.0/Input System 1.20.1/Windows x64 source is adopted under Game/. ADOPTION-001 fixed; 2 smoke tests, sample Play Mode and local Mono development build/run/shutdown verified. Original external source preserved. VS breakpoint/attachment and remote clean-clone engine recovery are now verified. Phase 0 still awaits remaining developer assessment and milestone sign-off. Routine source commit/push is now authorized and underway. No gameplay, game-build publication or paid-service activation. PHASE0_VERIFICATION.md is the latest evidence record; earlier audit entries are historical.
 
 ## Verified foundation
 - Reviewed all 11 original documentation files and organized root instructions/configuration plus Documentation/.
@@ -21,7 +21,7 @@ Phase 0 — development environment, locally built and smoke-tested. Approved Un
 - Codex scheduled jobs/heartbeats are exposed. Work GitHub PR triggers are documented on eligible web/mobile plans, not desktop; account eligibility remains unverified.
 
 ## Limitations
-- Windows CIM hardware access denied; hardware details need user input.
+- Initial CIM denial was resolved by an authorized read-only query; hardware is recorded in SOFTWARE_SETUP.md. Remaining assessment: experience, availability/session preference and budget.
 - Installed editor 6000.6.7f1_b22767f04f04, Visual Studio Community 2026 18.11.2 with Unity workload/component, Git 2.53.0.windows.3 and LFS 3.7.1 verified by installation/CLI evidence. Existing project resolves URP 17.6.0, Input 1.20.1, IDE 2.0.28, Test Framework 1.8.0. No launch, compilation, debugger, engine tests, or builds executed during this audit. Native C++ toolchain was not found; IL2CPP readiness is unverified.
 - No automatic live propagation into existing chats or project instructions has been verified.
 
@@ -51,3 +51,10 @@ Original source remains unchanged (69 source-file hashes); copied metadata intac
 
 ## Publication authorization and recovery task — 2026-10-28
 Standing Git authorization is now recorded in AGENTS.md and COMMUNICATION_PROTOCOL.md. Reviewed source/settings/tooling/tests/metadata plus ignore/attribute rules committed locally as 9e10d8d391ac0acfd25d6bb32fb6739c37174bd1. Preflight remote main remained 38547f6321315124280a087fed5d1063e23db79f. No secrets/generated output found in staged audit. Next: publish normal fast-forward commits after fresh remote check, verify remote files, clone a fresh temporary checkout without Game/Library, run tests/build/player and retry normal VS launch/debugger flow. Phase 0 remains open; no gameplay/build publication authorized.
+
+## Published recovery and debugger verification — 2026-10-28
+Technical environment recovery PASSED at published revision a430eaa05a7948107ae200d4b0918aa08b233da7 (Game subtree b1d3f16c88feb8130a5f1c7a34659a091f7ba10c). Fresh clone began without Game/Library, restored packages and compiled, passed 2/2 smoke tests (exit 0), built Windows x64 Mono Development+AllowDebugging with 0 errors/warnings (exit 0), rendered the recovered standalone and shut down normally. Lockfile unchanged; sole auto-enabled UnityConnect flag restored to committed disabled state; recovered checkout clean. Original external 69 source hashes unchanged.
+
+VS 2026 retry succeeded through normal app access: solution build, Attach to Unity, current-session debugging, breakpoint hit at GenesisEnvironment.OpenSampleScene line 19 with call stack, resume and debug-session end verified. Temporary breakpoint removed; canonical editor closed normally. Earlier debugger access limitation is resolved. Details/commands/evidence: PHASE0_RECOVERY_VERIFICATION.md.
+
+Phase 0 remains OPEN for developer assessment (experience, availability/session preference, budget) and milestone sign-off. No gameplay authorized. CELL_STAGE_MVP_PROPOSAL.md is a review-only planning draft. Standing source commit/push authority is active; no game builds published or monitoring enabled. Remaining low-risk items: TD-P0-001 size tradeoff, non-fatal D3D12 debug-info diagnostic, and recheck of Unity's automatic UnityConnect flag behavior on future runs.
